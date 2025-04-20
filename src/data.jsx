@@ -232,17 +232,17 @@ export const testimonial = [
 export const contacts = [
   {
     name:"Email",
-    value:"mradinuba@gmail.com",
+    value:"info.jeevan02@gmail.com",
     icon:<MdOutlineAlternateEmail />,
   },
   {
     name:"Phone Number",
-    value:"+2348149121918",
+    value:"+91 9500362308",
     icon:<IoCallOutline/>,
   },
   {
     name:"Address",
-    value:"Gwarinpa, Abuja, Nigeria",
+    value:"Saravanampatti, Coimbatore",
     icon:<IoLocationOutline/>,
   },
 ]
