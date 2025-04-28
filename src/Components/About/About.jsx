@@ -18,10 +18,10 @@ const About = () => {
             focusing on the basics
           </h1>
           <p className="text__muted description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, autem
-            vero. Voluptatum qui, dolores perferendis alias adipisci debitis
-            sint molestiae, dicta rerum fugit quas dolorum quo vel velit.
-            Exercitationem, molestiae?
+            We specialize in delivering high-quality solar energy solutions
+            tailored to your needs. Our expert team ensures smooth installation,
+            maximum efficiency, and long-term energy savings. Trust us to power
+            your future with clean, reliable solar technology.
           </p>
           <div className="group">
             {/* Start Row */}
