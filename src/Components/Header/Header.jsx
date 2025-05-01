@@ -32,11 +32,11 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <div className="column">
+        {/* <div className="column">
           <div className="image__container primary-effect">
             <img src={solar__skyscraper} alt="Jeevan Renewable Energy" />
           </div>
-        </div>
+        </div> */}
       </div>
     </header>
   );
