@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { contacts } from "../../data";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch(
+      "https://formsubmit.co/ajax/info.jeevan02@gmail.com",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      setFormData({
+        firstname: "",
+        lastname: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } else {
+      alert("Failed to send message. Please try again later.");
+    }
+  };
+
   return (
     <section id="contact">
       <div className="bg__image"></div>
@@ -27,19 +68,23 @@ const Contact = () => {
               brighter, greener future together!
             </p>
           </div>
-          <div className="form__middle">
+          <form className="form__middle" onSubmit={handleSubmit}>
             <div className="row">
               <input
                 type="text"
                 placeholder="First name"
                 name="firstname"
                 className="control"
+                value={formData.firstname}
+                onChange={handleChange}
               />
               <input
                 type="text"
                 placeholder="Last name"
                 name="lastname"
                 className="control"
+                value={formData.lastname}
+                onChange={handleChange}
               />
             </div>
             <div className="row">
@@ -48,26 +93,33 @@ const Contact = () => {
                 placeholder="Email address"
                 name="email"
                 className="control"
+                value={formData.email}
+                onChange={handleChange}
               />
               <input
                 type="tel"
                 placeholder="Phone number"
                 name="phone"
                 className="control"
+                value={formData.phone}
+                onChange={handleChange}
               />
             </div>
             <textarea
               name="message"
-              id=""
               cols={30}
               rows={5}
               placeholder="Message"
               className="control"
+              value={formData.message}
+              onChange={handleChange}
             ></textarea>
-          </div>
-          <div className="form__bottom">
-            <button className="btn btn__primary">Send Message</button>
-          </div>
+            <div className="form__bottom">
+              <button type="submit" className="btn btn__primary">
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
