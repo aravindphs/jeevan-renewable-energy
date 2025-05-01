@@ -9,6 +9,7 @@ import Projects from "./Components/Projects/Projects";
 import Services from "./Components/Services/Services";
 import Teams from "./Components/Teams/Teams";
 import Testimonial from "./Components/Testimonial/Testimonial";
+import WhatsAppButton from "./Components/WhatsAppButton/WhatsAppButton";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Faq />
       <Contact />
       <Footer />
+      <WhatsAppButton /> {/* Added WhatsAppButton component */}
     </>
   );
 }

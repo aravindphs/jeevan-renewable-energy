@@ -13,7 +13,8 @@ const Header = () => {
       <div className="container full__height blur-effect">
         <div className="column">
           <h1 className="title">
-            Revolutionary Home <span className="g-text">Solar System</span>
+            Complete Solar Solutions for{" "}
+            <span className="g-text">Home, Business & Industry</span>
           </h1>
           <p className="text__muted">
             At <span className="g-text">Jeevan Renewable Energy</span>, we offer
