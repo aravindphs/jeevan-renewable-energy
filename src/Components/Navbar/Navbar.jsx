@@ -56,8 +56,8 @@ const Navbar = () => {
         ))}
       </div>
       <div className="box">
-        <Link to="contact" className="btn contact__btn">
-          Get Started
+        <Link to="contact" className="btn btn__primary contact__btn">
+          Get Quote
         </Link>
         <div
           className="icon__container menu__btn"

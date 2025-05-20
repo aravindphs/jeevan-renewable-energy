@@ -12,7 +12,7 @@ const About = () => {
           <img src={company__photo} alt="Jeevan Renewable Energy" />
         </div>
         <div className="column">
-          <h3 className="sub__title">With 7+ Years Experience</h3>
+          <h3 className="sub__title">With 9+ Years Experience</h3>
           <h1 className="sub__title">
             Turning your <span className="g-text">vision</span> into reality by
             focusing on the basics

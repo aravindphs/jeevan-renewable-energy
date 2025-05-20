@@ -20,7 +20,7 @@ export const navTabs = [
   { name: "Home", id: "header" },
   { name: "About Us", id: "about" },
   { name: "Services", id: "services" },
-  { name: "Team", id: "team" },
+  // { name: "Team", id: "team" },
   { name: "Project", id: "project" },
   { name: "Clients", id: "testimonial" },
   { name: "FAQ", id: "faq" },
@@ -258,6 +258,11 @@ export const contacts = [
     name: "Address",
     value: "Saravanampatti, Coimbatore",
     icon: <IoLocationOutline />,
+  },
+  {
+    name: "Instagram",
+    value: "jeevan_renewable_energy",
+    icon: <FaInstagram />,
   },
 ];
 
