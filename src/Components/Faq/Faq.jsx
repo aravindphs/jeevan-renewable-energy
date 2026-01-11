@@ -37,7 +37,11 @@ const Faq = () => {
                 )}
               </div>
               <div className="answer">
-                <p className="text__muted">{list.description}</p>
+                <ul className="text__muted faq__list__content">
+                  {list.description.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}

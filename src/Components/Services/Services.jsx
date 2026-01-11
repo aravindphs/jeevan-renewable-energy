@@ -24,7 +24,6 @@ const Services = () => {
                 <p className="text__muted description">{service.description}</p>
               </div>
               <div className="buttons__container">
-                <button className="btn">Read More</button>
                 <Link to="contact" className="btn btn__primary">
                   Get Started
                 </Link>

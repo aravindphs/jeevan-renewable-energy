@@ -4,7 +4,6 @@
 
 #faq .faq__list {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
@@ -53,7 +52,12 @@
   overflow-y: auto;
 }
 
-#faq .answer p {
+#faq .answer ul {
   background: var(--color-ui-primary);
   padding: 30px;
+  padding-left: 50px;
+}
+
+#faq .answer ul li {
+  margin-bottom: 10px;
 }

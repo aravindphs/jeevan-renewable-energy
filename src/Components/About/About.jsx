@@ -5,6 +5,11 @@ import { FaCheck } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
 const About = () => {
+  const handleClick = () => {
+    window.open(
+      "https://wa.me/919500362308?text=Hi, I would like to get a quote!",
+      "_blank"
+    );}
   return (
     <section id="about">
       <div className="container">
@@ -78,7 +83,7 @@ const About = () => {
             <Link to="project" smooth={true} className="btn">
               Explore
             </Link>
-            <Link to="contact" smooth={true} className="btn btn__primary">
+            <Link onClick={handleClick} smooth={true} className="btn btn__primary">
               Get a quote
             </Link>
           </div>
