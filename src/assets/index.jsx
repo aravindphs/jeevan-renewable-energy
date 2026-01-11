@@ -14,3 +14,6 @@ export {default as profile4} from "./profile-4.jpeg";
 export {default as profile5} from "./profile-5.jpg";
 export {default as profile6} from "./profile-6.png";
 export {default as sun} from "./sun.png";
+export {default as residential01} from "./residential-01.jpeg";
+export {default as commercial01} from "./commercial-01.jpeg";
+export {default as industrial01} from "./industrial-01.jpeg";

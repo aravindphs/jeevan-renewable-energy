@@ -41,9 +41,9 @@ const Testimonial = () => {
               </div>
               <p className="text__muted content">{list.review}</p>
               <div className="user__row">
-                <div className="profile">
+                {/* <div className="profile">
                   <img src={list.image} alt={list.name} />
-                </div>
+                </div> */}
                 <div className="details">
                   <h3 className="name">{list.name}</h3>
                   <small>Client</small>

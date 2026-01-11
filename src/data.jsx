@@ -7,9 +7,9 @@ import {
   profile3,
   profile4,
   profile5,
-  panel,
-  turbine,
-  batteries,
+  residential01,
+  commercial01,
+  industrial01,
   member1,
   member2,
   member3,
@@ -30,17 +30,17 @@ export const navTabs = [
 export const services = [
   {
     name: "Residential Solars",
-    image: "./src/assets/residential-01.jpeg",
+    image: residential01,
     description: `One of our core services is the design and installation of residential solar power systems, tailored to meet the unique energy needs of homeowners.`,
   },
   {
     name: "Commercial Solars",
-    image: "./src/assets/commercial-01.jpeg",
+    image: commercial01,
     description: `Not only homes but we also specialize in providing commercial solar solutions for businesses looking to reduce their energy costs and carbon footprint.`,
   },
   {
     name: "Industrial Solars",
-    image: "./src/assets/industrial-01.jpeg",
+    image: industrial01,
     description: `We do Mega watt solar installations for industries aiming to achieve significant energy savings and sustainability goals through renewable energy adoption.`,
   },
 ];
@@ -112,7 +112,7 @@ export const projects = [
   {
     title: "Residential Installation",
     image:
-      "./src/assets/residential-01.jpeg",
+      residential01,
     category: "Residential",
     description: `Success fully installed 3 KW Residential solar system for a family in Coimbatore, Tamil Nadu, India. This system is designed to meet the energy needs of the household while reducing their carbon footprint.`,
   },
@@ -132,7 +132,7 @@ export const projects = [
   {
     title: "Industrial Installation",
     image:
-      "./src/assets/industrial-01.jpeg",
+      industrial01,
     category: "Industrial",
     description: `Success fully installed 30KW industrial solar system for a manufacturing unit in Tiruppur, Tamil Nadu, India. This installation is aimed at significantly reducing the facility's energy costs and environmental impact.`,
   },
@@ -146,7 +146,7 @@ export const projects = [
   {
     title: "Commercial Installation",
     image:
-      "./src/assets/commercial-01.jpeg",
+      commercial01,
     category: "Commercial",
     description: `Success fully installed 20KW commercial solar for a housing community in Coimbatore, Tamil Nadu, India. This project aims to provide sustainable energy solutions to the community while lowering overall electricity expenses.`,
   },
